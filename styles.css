@@ -1,0 +1,65 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: cornsilk;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+
+.yt-video-player {
+  width: 800px;
+  height: 450px;
+}
+
+.move-in {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  animation-duration: 2s;
+  animation-name: slide-in;
+}
+
+.move-in > * {
+  text-align: center;
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: 100%;
+  }
+  
+  to {
+    margin-left: 0%;
+  }
+}
+ 
+.song-title {
+  font-size: x-large;
+}
+
+#next-btn {
+  background-color:lightslategray;
+  border: none;
+  border-radius: 2em;
+  height: 100px;
+  font-size: large;
+  width: 250px;
+}
+
+#next-btn:hover {
+  background-color: rgb(202, 206, 226);
+}
+
+#next-btn:active {
+  background-color: rgb(163, 176, 192);
+}
